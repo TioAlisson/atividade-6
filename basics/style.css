@@ -1,0 +1,31 @@
+:root {
+    --color-btn: #f35c36;
+    --color-plus: #30A935;
+    --color-equality: #0D6EFD;
+    --white: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+input, input:focus, input:focus-visible { outline: none !important; box-shadow: none !important; border-color: none transparent; }
+
+.link-page { position: fixed; right: 0; top: 0; margin-right: 80px; margin-top: 40px;  }
+.welcomeMessage { display: none; }
+
+.basics { margin-top: 100px; margin-bottom: 80px; }
+
+/* CALCULADOORA */
+.calculator { background-color: var(--white); width: 300px; background-color: #ececf5; border-radius: 10px; padding: 20px; margin: auto; margin-bottom: 80px; }
+.calculator input { width: 100%; border: none; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08); padding-block: 15px; border-radius: 6px; margin-bottom: 20px; text-align: end; padding-right: 20px; font-size: 28px; }
+.op-basics { margin-top: 80px; margin-bottom: 60px;  }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; }
+
+.clear { grid-column: span 2; background-color: var(--color-btn); color: var(--white); }
+.plus { grid-row: span 2; background-color: var(--color-plus); color: var(--white); }
+.equality { grid-column: span 2; background-color: var(--color-equality); color: var(--white); }
+
+button { border: none; background-color: transparent; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08); font-size: 20px; border-radius: 8px; background-color: var(--white); } 
+button { padding-block: 10px; padding-inline: 20px; } colocar padding botão
+button:hover { opacity: 0.8;  }
+

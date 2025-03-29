@@ -1,0 +1,33 @@
+:root {
+    --age-invalidates: #b42529;
+    --age-false: #FFFF9B;
+    --age-true: #369a13;
+    --gray: #ECECF5;
+    --white: #F4F4F4;
+}
+
+input { border: none; outline: none; }
+button { width: 100%; border: none; outline: none; }
+
+.link-page { position: fixed; right: 0; top: 0; margin-right: 80px; margin-top: 40px;  }
+
+.intermediate { margin-top: 100px;  }
+
+.age-invalidates, .age-true { color: var(--white); }
+.age-invalidates { background-color: var(--age-invalidates); }
+.age-false { background-color: var(--age-false); }
+.age-true { background-color: var(--age-true); }
+
+.cacl-percentage { box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35); width: fit-content; background-color: var(--gray); margin: auto; padding-block: 30px; margin-block: 100px; border-radius: 12px; }
+.cacl-percentage h1 { border-bottom: 4px solid black; padding-inline: 30px; }
+.cacl-percentage label { min-width: 150px; }
+.cacl-percentage input { border-radius: 6px; padding-block: 4px; padding-inline: 8px; }
+.cacl-percentage .btn-calc { background-color: #252324; color: var(--white); text-transform: uppercase; padding-block: 8px; font-size: 18px; border-radius: 6px; }
+.cacl-percentage .btn-calc:hover { opacity: 0.9; }
+
+
+/* FORM CONVERTER */
+#form-converter { background-color: #252324; color: var(--white); box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35); width: fit-content; margin: auto; padding: 40px; margin-bottom: 100px; border-radius: 6px; }
+#form-converter .btn-converter { background-color: #675AFF; color: var(--white); font-weight: 700; font-size: 18px; border-radius: 6px; }
+#form-converter input { padding-block: 6px; border-radius: 2px; padding-inline: 12px; }
+#result-coverter:disabled { color: var(--white); font-size: 20px; }

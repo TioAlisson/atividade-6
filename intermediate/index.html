@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises Basic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+
+  <a href="../basics/index.html">
+    <span class="link-page">To go Exercices Basics</span>
+  </a>
+
+  <h2 class="text-center mt-5">Exercices Intermediate:</h2>
+
+  <h2 class="text-center intermediate">Verificação de maioridade</h2>
+  <form class="w-50 m-auto mt-4" id="form-age">
+    <div class="mb-4">
+      <label for="input-age" class="form-label">Qual a sua idade?</label>
+      <input type="number" class="form-control" id="input-age" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-4">
+      <input type="text" id="result-age" class="d-none text-uppercase text-center h4 border rounded-2   py-3 w-100">
+    </div>
+    <button type="submit" id="btn-age"
+      class="btn btn-primary d-flex justify-content-center text-uppercase mx-auto w-50 mt-4">Enivar</button>
+  </form>
+
+  <form class="cacl-percentage" id="input-form">
+    <h1 class="text-center">Calculadora de %</h1>
+    <div class="d-flex flex-column align-items-center mt-5 px-4">
+      <div class="h5">
+        <div>
+          <label for="input-price">Preço original: </label>
+          <input type="number" id="input-price">
+        </div>
+        <div class="mt-3">
+          <label for="input-discounted">% de desconto:</label>
+          <input type="number" id="input-discounted">
+        </div>
+        <div class="d-none" id="show-message-validate">
+          <span class="d-block mt-4">Por favor informe uma número válido! ;(</span>
+        </div>
+      </div>
+      <button type="submit" class="mt-5 btn-calc" id="btn-calculate">Calcular</button>
+      <div id="discounted-price" class="d-none">
+        <h2 class="mt-5">Preço com desconto:</h2>
+        <span class="d-flex justify-content-center h2 mt-3" id="result-discounted"></span>
+      </div>
+    </div>
+  </form>
+
+  <form id="form-converter">
+    <div class="d-flex flex-column">
+      <h2>Converter Moeda</h2>
+      <label for="input-real">R$</label>
+      <input type="number" id="input-real">
+      <label for="result-coverter" class="mt-4">U$</label>
+      <input id="result-coverter" type="text" disabled>
+    </div>
+  </form>
+
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
