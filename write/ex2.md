@@ -1,0 +1,7 @@
+2. Qual a diferença entre os três tipos de variáveis em JavaScript (var, let e const)?
+
+VAR - A declaração de variáveis com var não é mais recomendada hoje em dia devido ao seu escopo, que pode ser acessado fora do bloco atual, afetando o código de maneira inesperada e causando erros. Além disso, o var permite reatribuição de valores, o que pode levar a mudanças indesejadas. Ele também possui hoisting, ou seja, a variável é movida para o topo do escopo e pode ser usada antes da sua declaração, mas seu valor será undefined até ser inicializada. Por esses motivos, o let é mais comum no lugar do var atualmente.
+
+LET - O escopo de uma variável declarada com let é o bloco em que ela foi definida (como um if, for, etc.). Isso significa que ela só estará acessível dentro desse bloco. A variável declarada com let pode ter seu valor reatribuído, mas não pode ser redeclarada dentro do mesmo escopo. Além disso, a variável let não pode ser acessada antes de sua declaração, o que resultaria em um erro.
+
+CONST - Assim como o let, o escopo de uma variável declarada com const é o bloco onde ela foi definida. Porém, ao contrário do let, uma variável declarada com const não pode ser reatribuída. Ou seja, o valor atribuído à variável na declaração não poderá ser alterado ao decoorer do código, e também const não pode ser acessada antes de ser inicializada.
